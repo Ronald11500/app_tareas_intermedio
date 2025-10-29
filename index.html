@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <head>
       <link
         rel="icon"
@@ -12,5 +13,32 @@
       />
     </head>
   </head>
-  <body></body>
+  <body>
+    <img
+      src="./assets/logo_plan_mant.png"
+      alt="Logo de mi apliacison"
+      class="logo"
+    />
+    <h1>aplicacion de Tareas</h1>
+    <form action="#" id="inputUsuario">
+      <input type="text" placeholder="Escribe tu tarea aqui..." />
+      <input type="submit" value="+" id="btnAgregar" />
+    </form>
+    <div id="lista" class="contenedor_lista">
+      <!-- Las tareas se agregan aqui -->
+      <div class="contenedor_tarea" id="1">
+        <label for="">
+          <input type="checkbox" />
+          Tarea 1
+        </label>
+        <img
+          src="./assets/img_trash.png"
+          alt="Eliminar tarea"
+          class="btnEliminar"
+        />
+      </div>
+    </div>
+    <div id="stats">Tareas pendientes: 5 Completadas: 3</div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
