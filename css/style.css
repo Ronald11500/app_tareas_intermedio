@@ -1,4 +1,88 @@
+:root {
+  --orange: #d95550;
+  --ligthOrange: #dd6662;
+  --veryLigthOrange: #f89e8b;
+  --gray: #55557b;
+  --white: #fff;
+}
+* {
+  margin: p;
+  padding: 0;
+}
 body {
-  font-family: Arial, sans-serif;
-  background-color: aqua;
+  font-family: "Lucida Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--ligthOrange);
+}
+.logo {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+h1 {
+  margin-top: 200px;
+  color: var(--white);
+  text-align: center;
+}
+form {
+  border: solid;
+  width: 400px;
+  margin: 45px auto;
+  text-align: center;
+}
+form input [type="text"] {
+  background-color: var(--orange);
+  color: var(--white);
+  border-style: none;
+  font-size: 1.5rem;
+}
+form input[type="text"] ::placeholder {
+  color: var(--ligthOrange);
+}
+form input[type="text"]:focus {
+  outline: none;
+}
+form input [type="submit"] {
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+form input [type="submit"] :hover {
+  background-color: var(--veryLigthOrange);
+  cursor: pointer;
+  color: var(--white);
+}
+.btnEliminar {
+  width: 20px;
+  height: 20px;
+  transition: ease-in-out 0.5s;
+}
+.btnEliminar:hover {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s;
+}
+
+.contenedor_lista {
+  width: 400px;
+  margin: 0 auto;
+}
+.contenedor_tarea {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+#stats {
+  margin-top: 25px;
+  font-size: 1.3em;
+  color: var(--ligthOrange);
+  text-align: center;
 }
