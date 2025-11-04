@@ -1,24 +1,25 @@
 :root {
   --orange: #d95550;
-  --ligthOrange: #dd6662;
-  --veryLigthOrange: #f89e8b;
+  --lightOrange: #dd6662;
+  --veryLightOrange: #f89e8b;
   --gray: #55557b;
   --white: #fff;
 }
 * {
-  margin: p;
+  margin: 0;
   padding: 0;
 }
 body {
-  font-family: "Lucida Sans", "Lucida Sans", "Lucida Sans Regular",
-    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: var(--ligthOrange);
+  font-family: "Lucida Sans", "Lucida Snas regular", "Lucida grande",
+    "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+  background-color: var(--orange);
 }
 .logo {
   width: 300px;
   position: absolute;
   top: 0px;
   right: 30px;
+  justify-content: center;
 }
 h1 {
   margin-top: 200px;
@@ -26,63 +27,65 @@ h1 {
   text-align: center;
 }
 form {
-  border: solid;
+  border: 1px solid;
   width: 400px;
   margin: 45px auto;
   text-align: center;
 }
-form input [type="text"] {
+form input[type="text"] {
   background-color: var(--orange);
   color: var(--white);
   border-style: none;
   font-size: 1.5rem;
 }
-form input[type="text"] ::placeholder {
-  color: var(--ligthOrange);
+form input[type="text"]::placeholder {
+  color: var(--lightOrange);
 }
 form input[type="text"]:focus {
   outline: none;
 }
-form input [type="submit"] {
-  font-size: 2rem;
+form input[type="submit"] {
+  font-size: 2em;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border-style: none;
+  color: var(--orange);
 }
-form input [type="submit"] :hover {
-  background-color: var(--veryLigthOrange);
+form input[type="submit"]:hover {
+  background-color: var(--lightOrange);
   cursor: pointer;
   color: var(--white);
 }
-.btnEliminar {
-  width: 20px;
-  height: 20px;
-  transition: ease-in-out 0.5s;
-}
-.btnEliminar:hover {
-  cursor: pointer;
-  width: 35px;
-  height: 35px;
-  transition: all 0.5s;
-}
-
-.contenedor_lista {
+.contenedor-lista {
   width: 400px;
   margin: 0 auto;
 }
-.contenedor_tarea {
+.contenedor-tarea {
   background-color: var(--white);
+  color: var();
   display: flex;
   justify-content: space-between;
   margin-bottom: 6px;
   padding: 16px;
   border-radius: 4px;
-  font-size: 1.1rem;
+  font-size: 1.1em;
+  font-weight: 500;
   color: var(--gray);
 }
-#stats {
+.btnEliminar {
+  width: 25px;
+  height: 25px;
+}
+.btnEliminar:hover {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  transition: all 0.5s;
+}
+.stats {
   margin-top: 25px;
   font-size: 1.3em;
-  color: var(--ligthOrange);
+  color: var(--lightOrange);
   text-align: center;
 }

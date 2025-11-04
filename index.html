@@ -3,42 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>App tareas intermedio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-transparente.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <head>
-      <link
-        rel="icon"
-        type="image/x-icon"
-        href="./assets/logo-transparente.ico"
-      />
-    </head>
   </head>
   <body>
     <img
       src="./assets/logo_plan_mant.png"
-      alt="Logo de mi apliacison"
+      alt="logo de aplicacion"
       class="logo"
     />
-    <h1>aplicacion de Tareas</h1>
+
+    <h1>Aplicacion de Tareas</h1>
+
     <form action="#" id="inputUsuario">
-      <input type="text" placeholder="Escribe tu tarea aqui..." />
+      <input type="text" placeholder="escribe tu tarea aqui ....." autofocus />
       <input type="submit" value="+" id="btnAgregar" />
     </form>
-    <div id="lista" class="contenedor_lista">
-      <!-- Las tareas se agregan aqui -->
-      <div class="contenedor_tarea" id="1">
-        <label for="">
+
+    <div id="lista" class="contenedor-lista">
+      <div class="contenedor-tarea" id="1">
+        <label>
           <input type="checkbox" />
-          Tarea 1
+          tarea 1
         </label>
-        <img
-          src="./assets/img_trash.png"
-          alt="Eliminar tarea"
-          class="btnEliminar"
-        />
+        <img src="./assets/img_trash.png" alt="eliminar" class="btnEliminar" />
       </div>
     </div>
-    <div id="stats">Tareas pendientes: 5 Completadas: 3</div>
-    <script src="./js/script.js"></script>
+
+    <div id="stats">
+      <script src="./js/script.js"></script>
+    </div>
   </body>
 </html>
